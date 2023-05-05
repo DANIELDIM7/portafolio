@@ -437,11 +437,17 @@ label span.top {
 .formcontato__botao {
   width: 144px;
   height: 51px;
-  background-color: rgba(42, 122, 228, 1);
+
+  /* background-color: rgba(42, 122, 228, 1); */
+  background-color: rgb(151, 160, 172);
   /* background: rgb(163, 154, 154); */
 
   border: none;
   color: rgba(255, 255, 255, 1);
+}
+
+.boton-activo{
+  background-color:rgba(42, 122, 228, 1);
 }
 
 

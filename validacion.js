@@ -29,6 +29,17 @@ const form = document.getElementById("form");
 const parrafo = document.getElementById("parrafo");
 const btn = document.getElementById("submitButton");
 
+form.addEventListener('keyup', () =>{
+  
+  if (form.nombre.value != '' || form.email.value != '' || form.asunto.value != '' ||form.mensaje.value != '') {
+    
+    btn.disabled= false
+    btn.classList.add('boton-activo')
+    
+  }
+  
+})
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let warnings = "";
@@ -66,4 +77,7 @@ form.addEventListener("submit", (e) => {
   if (entrar) {
     parrafo.innerHTML = warnings;
   }  
+  form.reset();
 });
+
+
